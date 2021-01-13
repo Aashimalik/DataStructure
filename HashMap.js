@@ -88,4 +88,4 @@ function firstRecurringCharacter2(input) {
   return undefined
 } // O(n)
 
-firstRecurringCharacter([1,5,5,1,3,4,6])
+firstRecurringCharacter([1,5,5,1,3,4,6]);
