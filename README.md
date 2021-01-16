@@ -12,5 +12,6 @@ Contains all the code samples, implementations, and exercises from the Zero to M
     - [DoublyLinked Lists](https://github.com/Aashimalik/DataStructure/blob/master/DoublyLinkedList.js)
     
     - [Stack](https://github.com/Aashimalik/DataStructure/blob/master/Stack.js)
+    - [Queue](https://github.com/Aashimalik/DataStructure/blob/master/Queue.js)
     
   
