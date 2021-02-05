@@ -12,7 +12,6 @@ function mergeSort (array) {
   // console.log('left:', left);
   // console.log('right:', right);
 
-  
   return merge(
     mergeSort(left),
     mergeSort(right)
@@ -33,7 +32,7 @@ function merge(left, right){
        rightIndex++
     }
   }  
-  // console.log(left, right)
+
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
 
