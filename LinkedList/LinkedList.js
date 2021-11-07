@@ -22,6 +22,12 @@ class LinkedList {
     this.length = 1;
   }
 
+  /**
+  * Adds a node at the end of the list.
+  * @public
+  * @param {any} value
+  * @returns {LinkedList}
+  */
   append(value) {
     let newNode = {
       value: value,
@@ -34,6 +40,13 @@ class LinkedList {
     return this;
   }
 
+
+  /**
+  * Adds a node at the beginning of the list.
+  * @public
+  * @param {any} value
+  * @returns {LinkedList}
+  */
   prepend(value) {
     let newNode = {
       value: value,
@@ -57,6 +70,13 @@ class LinkedList {
     return array;
   }
 
+  /**
+  * Adds a node at a specific position.
+  * @public
+  * @param {number} index
+  * @param {any} value
+  * @returns {LinkedList}
+  */
   insert(index, value) {
     if(index >= this.length) {
       return this.append(value);
@@ -87,8 +107,14 @@ class LinkedList {
     return currentNode;
   }
 
+  /**
+  * Removes a node at a specific position.
+  * @public
+  * @param {number} index
+  * @returns {LinkedList}
+  */
   remove(index) {
-    // Check Parameters      
+    // Check Parameters
     const leader = this.traverseToIndex(index-1);
     const unwantedNode = leader.next;
     leader.next = unwantedNode.next;
@@ -104,4 +130,5 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.remove(2);
+console.log(myLinkedList.printList())
 
