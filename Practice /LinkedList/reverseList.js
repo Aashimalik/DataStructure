@@ -11,17 +11,14 @@ leetcode: 206
 
 // Method 1 Iterative
 var reverseList = function(head) {
-   let prevNode = null;
-   let nextNode = null;
-   let currentNode = head;
-    while(currentNode !== null) {
-        nextNode = currentNode.next;
-        currentNode.next = prevNode;
-        prevNode = currentNode;
-        currentNode = nextNode;
-
+    let prevNode = null;
+    while(head!==null) {
+      const nextNode = head.next;
+      head.next = prevNode;
+      prevNode = head;
+      head = nextNode
     }
-    
+
     return prevNode;
 };
 

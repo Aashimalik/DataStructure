@@ -1,9 +1,9 @@
 /**
- 
+
 Write a program to reverse an array or string
 Given an array (or string), the task is to reverse the array/string.
 
-Examples : 
+Examples :
 
 Input = [1, 2, 3]
 Output = [3, 2, 1]
@@ -11,7 +11,7 @@ Output = [3, 2, 1]
 Input = [4, 5, 1, 2]
 Output = [2, 1, 5, 4]
 
-LeetCode :344, 
+LeetCode :344,
 */
 
 function reverseArrayOrString(input) {
@@ -23,7 +23,7 @@ function reverseArrayOrString(input) {
         start++;
         end--;
     }
-    
+
     return input;
 }
 
